@@ -1,0 +1,17 @@
+{
+  "name": "js-init",
+  "version": "1.0.0",
+  "description": "Basic syntax - EcmaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "node index"
+  },
+  "keywords": [
+    "JS",
+    "Ecma",
+    "Script"
+  ],
+  "author": "Ismail BASSAOUD",
+  "license": "ISC"
+}
