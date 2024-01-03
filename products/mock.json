@@ -1,0 +1,20 @@
+[
+    {
+        "id": "16ef53",
+        "name": "Product 1",
+        "stock": 10,
+        "price": 0.59
+    },
+    {
+        "id": "2ef45a",
+        "name": "Product 2",
+        "stock": 8,
+        "price": 1.15
+    },
+    {
+        "id": "aa256e",
+        "name": "Product 3",
+        "stock": 0,
+        "price": 9
+    }
+]
