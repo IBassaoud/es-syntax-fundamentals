@@ -34,28 +34,16 @@ export class ProductBuilder extends Builder {
    */
   build() {
     if (this.id === "")
-      throw new IdIsEmptyError({
-        message: "Cannot build Product without an ID",
-        status: ProductErrors.ID_IS_EMPTY,
-      });
+      throw new IdIsEmptyError({ message: "Cannot build Product without an ID", status: ProductErrors.ID_IS_EMPTY});
 
     if (this.name === "")
-      throw new NameIsEmptyError({
-        message: "Cannot build Product without a name",
-        status: ProductErrors.NAME_IS_EMPTY,
-      });
+      throw new NameIsEmptyError({ message: "Cannot build Product without a name",status: ProductErrors.NAME_IS_EMPTY});
 
     if (isNaN(this.stock))
-      throw new StockNotValidError({
-        message: "Cannot build Product without a numerically positive stock",
-        status: ProductErrors.STOCK_NOT_VALID,
-      });
+      throw new StockNotValidError({ message: "Cannot build Product without a numerically positive stock", status: ProductErrors.STOCK_NOT_VALID});
 
     if (this.stock < 0)
-      throw new StockNegativeError({
-        message: "Cannot build Product with a negative number",
-        status: ProductErrors.STOCK_NEGATIVE,
-      });
+      throw new StockNegativeError({ message: "Cannot build Product with a negative number", status: ProductErrors.STOCK_NEGATIVE});
 
     const product = Product.getInstance();
     product.id = this.id;
